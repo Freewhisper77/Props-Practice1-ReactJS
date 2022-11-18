@@ -6,6 +6,7 @@ function Card(props) {
   return (
     <div className="card">
       <div className="top">
+        <p>{props.id}</p>
         <h2 className="name">{props.name}</h2>
         <Avatar img={props.img} alt={props.alt} />
         {/*如何将该图像属性传递给新建的Avatar组件 */}

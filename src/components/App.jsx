@@ -9,6 +9,7 @@ function createCard(contact) {
   // 当createCard函数被调用时，传进来的是contacts数组中的一个对象，而不是整个数组
   return (
     <Card
+      id={contact.id}
       key={contact.id}
       name={contact.name}
       img={contact.imgURL}
