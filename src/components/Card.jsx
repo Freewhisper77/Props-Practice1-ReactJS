@@ -1,5 +1,6 @@
 import React from "react";
 import Avatar from "./Avatar";
+import Info from "./Info";
 
 function Card(props) {
   return (
@@ -10,8 +11,7 @@ function Card(props) {
         {/*如何将该图像属性传递给新建的Avatar组件 */}
       </div>
       <div className="bottom">
-        <p className="info">{props.tel}</p>
-        <p className="info">{props.email}</p>
+        <Info tel={props.tel} email={props.email} />
       </div>
     </div>
   );
