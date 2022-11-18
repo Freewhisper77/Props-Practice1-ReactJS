@@ -5,6 +5,11 @@ import Avatar from "./Avatar";
 
 const imgAlt = "avatar_img";
 
+function createCard(contact) {
+  // 当createCard函数被调用时，传进来的是contacts数组中的一个对象，而不是整个数组
+  return <Card name={contact.name} />;
+}
+
 function App() {
   return (
     <div>
