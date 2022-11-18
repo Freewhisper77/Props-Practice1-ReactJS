@@ -1,12 +1,8 @@
 import React from "react";
 
 function Info(props) {
-  return (
-    <>
-      <p className="info">{props.tel}</p>
-      <p className="info">{props.email}</p>
-    </>
-  );
+  // 利用React DevTools 检查props名是否一致
+  return <p className="info">{props.detailInfo}</p>;
 }
 
 export default Info;

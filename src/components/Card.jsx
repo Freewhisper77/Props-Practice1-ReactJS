@@ -11,7 +11,8 @@ function Card(props) {
         {/*如何将该图像属性传递给新建的Avatar组件 */}
       </div>
       <div className="bottom">
-        <Info tel={props.tel} email={props.email} />
+        <Info detailInfo={props.tel} />
+        <Info detailInfo={props.email} />
       </div>
     </div>
   );
